@@ -12,9 +12,10 @@ jupyter-core==4.6.3
 jupyterlab==2.2.6
 plotly==5.3.1
 Rtree==0.9.4
-pandas==1.15.0
+pandas==1.1.3
 numpy==1.19.2
 notebook==6.1.4
 matplotlib==3.3.2
 lxml==4.6.1
-jupyterlab==2.2.6ls
+jupyterlab==2.2.6
+
