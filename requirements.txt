@@ -1,8 +1,8 @@
 streamlit==0.89.0
-pandas @ file:///C:/ci/pandas_1602083338010/work
+pandas==1.15.0
 base58==2.1.0
 yfinance==0.1.63
-lxml @ file:///C:/ci/lxml_1603216366346/work
+lxml @ file:///C:/ci/lxml_1603216366346/workp
 scikit-image==0.17.2
 scikit-learn @ file:///C:/ci/scikit-learn_1598377018496/work
 seaborn @ file:///tmp/build/80754af9/seaborn_1600553570093/work
