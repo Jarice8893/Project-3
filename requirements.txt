@@ -2,11 +2,7 @@ streamlit==0.89.0
 pandas==1.15.0
 base58==2.1.0
 yfinance==0.1.63
-lxml @ file:///C:/ci/lxml_1603216366346/workp
 scikit-image==0.17.2
-scikit-learn @ file:///C:/ci/scikit-learn_1598377018496/work
-seaborn @ file:///tmp/build/80754af9/seaborn_1600553570093/work
-SQLAlchemy @ file:///C:/ci/sqlalchemy_1603818908746/work
 anaconda-client==1.7.2
 anaconda-navigator==1.10.0
 conda==4.9.2
@@ -14,7 +10,5 @@ Flask==1.1.2
 gunicorn==20.1.0
 jupyter-core==4.6.3
 jupyterlab==2.2.6
-matplotlib @ file:///C:/ci/matplotlib-base_1603355780617/work
-numpy @ file:///C:/ci/numpy_and_numpy_base_1603466732592/work
 plotly==5.3.1
 Rtree==0.9.4
