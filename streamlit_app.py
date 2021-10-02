@@ -1,16 +1,19 @@
 from os import lseek
 import streamlit as st
-from datetime import date
+from datetime import datetime
 import yfinance as yf
 from plotly import graph_objs as go
+from sklearn import datasets 
+import numpy as np 
 
-START = "1980-12-12"
-TODAY = date.today().strftime("%Y-%m-%d")
+START = st.date_input('START', value = pd.to_datetime('1980-12-12'))
+TODAY = st.date_input('End', value = pd.to.datetime('today'))
 
-st.title("Stock prediction")
+st.title("Stock Prediction App")
 
 stocks = ("AAPL", "MSFT", "AP", "SPY", "TSLA", "USO")
-selected_stocks = st.selectbox("Select Dataset for prediction", stocks)
+selected_stocks = st.sidebar.selectbox("Select Dataset for prediction", stocks)
+#selected_classifer = st.sidebar.selectbox("Select Year", stocks)
 
 n_years = st.slider("Years of Prediction", 1, 4)
 prediction = n_years * 365
@@ -28,10 +31,6 @@ data_load_state.text("Loading Data... done!")
 
 st.subheader('Raw data')
 st.write(data.tail())
-
-
-
-
 
 
 
