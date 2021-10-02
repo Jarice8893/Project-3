@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Stock Visualizations</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="C:/Users/arodr/Documents/bootcamp/nu-chi-data-pt-04-2021-u-c/Final NW Project/Project-3-main/Project-3-main/data/style.css">
+</head>
+<body>
+    
+    <!--Navbar adjustments-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand text-white" href="index.html" ></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tables
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="msft_table.html">msft_data</a>
+                            <a class="dropdown-item" href="aapl_table.html">aapl_data</a>
+                            <a class="dropdown-item" href="spy_table.html">spy_table</a>
+                            <a class="dropdown-item" href="tsla_table.html">tsla_data</a>
+                            <a class="dropdown-item" href="uso_table.html">uso_data</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparison.html">Comparisons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!--create container, rows and columns and add images -->
+    <div class="container content">    
+        <div class="row">
+            <div class="col-md-8">
+                <div class="col-md-16">
+                    <h3>Company Stocks Throughout Time  </h3>
+                    <hr>
+                    <div class="thumbnail">
+                        <img class="img-thumbnail float-left" src="C:/Users/arodr/Documents/bootcamp/nu-chi-data-pt-04-2021-u-c/Final NW Project/Project-3-main/Project-3-main/data/Stock_Time_Series.png" width="80%" alt="Stocks">
+                    </div>
+                </div>
+            </div>
+            <!--visualization adjustments-->
+            <div class="col-md-4">
+                <div class="col-md-60">
+                    <h3>Separated Stock Visualizations</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-2 col-md-7">
+                            <a href="msft_table.html"><img src="C:/Users/arodr/Documents/bootcamp/nu-chi-data-pt-04-2021-u-c/Final NW Project/Project-3-main/Project-3-main/data/MSFT_Time_Series.png" width="100%"  alt="msft">
+                            </a> 
+                        </div>
+                        <div class="col-2 col-md-7">
+                            <a href="aapl_table.htmll"><img src="C:/Users/arodr/Documents/bootcamp/nu-chi-data-pt-04-2021-u-c/Final NW Project/Project-3-main/Project-3-main/data/APPL_Time_Series.png" width="100%" alt="aapl"></a>
+                        </div>
+                   
+                        <div class="col-2 col-md-7">
+                            <a href="spy_table.html"><img src="C:/Users/arodr/Documents/bootcamp/nu-chi-data-pt-04-2021-u-c/Final NW Project/Project-3-main/Project-3-main/data/SPY_Time_Series.png" width="100%"  alt="spy"></a>
+                        </div>
+
+                        <div class="col-2 col-md-7">
+                            <a href="tsla_table.html"><img src="C:/Users/arodr/Documents/bootcamp/nu-chi-data-pt-04-2021-u-c/Final NW Project/Project-3-main/Project-3-main/data/TSLA_Time_Series.png"width="100%"  alt="tsla"></a>
+                        </div>
+                            
+                        <div class="col-2 col-md-7">
+                            <a href="uso_table.html"><img src="C:/Users/arodr/Documents/bootcamp/nu-chi-data-pt-04-2021-u-c/Final NW Project/Project-3-main/Project-3-main/data/USO_Time_Series.png"width="100%"  alt="uso"></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <!-- Footer -->
+    <footer class="page-footer font-small footer-dark">
+        <div class="footer-copyright text-center py-3">© Copyright Coding Bootcamp 2021
+        </div>      
+    </footer>
+</body>
+</html>
