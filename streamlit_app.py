@@ -1,4 +1,4 @@
-from os import lseek
+from os import lseek, startfile
 import streamlit as st
 from datetime import datetime
 import yfinance as yf
@@ -14,6 +14,9 @@ st.title("Stock Prediction App")
 
 stocks = ("AAPL", "MSFT", "AP", "SPY", "TSLA", "USO")
 selected_stocks = st.sidebar.selectbox("Select Dataset for prediction", stocks)
+start = st.sidebar.date_input(START)
+end = st.sidebar.date_input(TODAY)
+
 #selected_classifer = st.sidebar.selectbox("Select Year", stocks)
 
 n_years = st.slider("Years of Prediction", 1, 4)
