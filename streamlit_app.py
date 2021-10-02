@@ -5,8 +5,11 @@ import yfinance as yf
 from plotly import graph_objs as go
 import numpy as np 
 
-START = "1980-12-12"
-TODAY = datetime.today().strftime("%Y-%m-%d")
+#START = "1980-12-12"
+#TODAY = datetime.today().strftime("%Y-%m-%d")
+
+start =st.date_input('START', value = pd.to_datetime('2021-01-01'))
+end = st.date_input('End',value = pd.to_datetime('today'))
 
 
 
@@ -14,15 +17,13 @@ st.title("Stock Prediction App")
 
 stocks = ("AAPL", "MSFT", "AP", "SPY", "TSLA", "USO")
 selected_stocks = st.sidebar.selectbox("Select Dataset for prediction", stocks)
-start = st.sidebar.date_input(START)
-end = st.sidebar.date_input(TODAY)
 
 #selected_classifer = st.sidebar.selectbox("Select Year", stocks)
 
 n_years = st.slider("Years of Prediction", 1, 4)
 prediction = n_years * 365
 
-
+'''
 @st.cache
 
 def load_data(ticker):
@@ -36,7 +37,7 @@ data_load_state.text("Loading Data... done!")
 
 st.subheader('Raw data')
 st.write(data.tail())
-
+'''
 
 
 
