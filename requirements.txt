@@ -6,9 +6,7 @@ scikit-image==0.17.2
 Flask==1.1.2
 gunicorn==20.1.0
 plotly==5.3.1
-Rtree==0.9.4
 numpy==1.19.2
 matplotlib==3.3.2
 lxml==4.6.1
-jupyterlab==2.2.6
 
