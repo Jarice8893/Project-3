@@ -3,11 +3,12 @@ import streamlit as st
 from datetime import datetime
 import yfinance as yf
 from plotly import graph_objs as go
-from sklearn import datasets 
 import numpy as np 
 
 START = "1980-12-12"
 TODAY = datetime.today().strftime("%Y-%m-%d")
+
+
 
 st.title("Stock Prediction App")
 
@@ -17,7 +18,6 @@ selected_stocks = st.sidebar.selectbox("Select Dataset for prediction", stocks)
 
 n_years = st.slider("Years of Prediction", 1, 4)
 prediction = n_years * 365
-
 
 
 @st.cache
