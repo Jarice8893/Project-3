@@ -17,7 +17,7 @@ prediction = n_years * 365
 
 def load_data(ticker):
     data = yf.download(ticker, START, TODAY)
-    data.rest_index(inplace=True)
+    data.reset_index(inplace=True)
     return data
 
 data_load_state = st.text("Load data..")
