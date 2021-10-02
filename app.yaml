@@ -1,2 +1,2 @@
-runtime: nodes.js
+runtime: python
 env: flex
