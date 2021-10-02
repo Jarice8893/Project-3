@@ -133,7 +133,7 @@ def prediction_plot(pred_data, test_data, models, ticker_name):
 
     st.plotly_chart(fig)
 
-# Sidebar Menu -----------------------
+# Sidebar Menu
 
 menu=["Stock Info, Dataframes, & Testing", "Stock Predictions"]
 st.sidebar.title("Menu")
@@ -199,7 +199,4 @@ elif choices == 'Stock Predictions':
             train_data, test_data = create_train_test_data(df1)
             pred_data = Linear_Regression_model(train_data, test_data)
             prediction_plot(pred_data, test_data, models, stock_select)
-
-
-
 
