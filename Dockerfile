@@ -9,4 +9,5 @@ EXPOSE 5432
 
 COPY . /streamlit_app/
 
-CMD streamlist run streamlit_app
+CMD streamlist run --server.port 5432 --server.enableCORS false streamlit_app.py
+
