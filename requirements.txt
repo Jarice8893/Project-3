@@ -1,5 +1,5 @@
 streamlit==0.89.0
-pandas==1.15.0
+pandas==1.1.3
 base58==2.1.0
 yfinance==0.1.63
 scikit-image==0.17.2
